@@ -1,0 +1,170 @@
+1)
+old:
+#content-right-news ul.list li:hover {
+	-webkit-box-shadow: 0 0 5px 1px #E7371A;
+	-moz-box-shadow: 0 0 5px 1px #E7371A;
+	box-shadow: 0 0 5px 1px #E7371A;
+	/*background-color: #FDEBE8;*/
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+new:
+#content-right-news ul.list li:hover {
+	position: relative;
+	-webkit-box-shadow: 0 0 5px 1px #E7371A;
+	-moz-box-shadow: 0 0 5px 1px #E7371A;
+	box-shadow: 0 0 5px 1px #E7371A;
+	/*background-color: #FDEBE8;*/
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+2)
+old:
+.left-column-news {
+	float: right;
+	width: 624px;
+	margin-right:10px;
+	padding-bottom: 39px;
+}
+new:
+.left-column-news {
+	float: right;
+	width: 624px;
+	margin-right:10px;
+}
+
+3)
+remove:
+.left-column-news + .left-column-news {
+	margin-top: -39px;
+}
+@media screen and (max-width:1360px) {
+	.left-column-news {
+		padding-bottom: 78px;
+	}
+	.left-column-news + .left-column-news {
+		margin-top: -78px;
+	}
+}
+
+4)
+old:
+.footer{
+	position: relative;
+	z-index: 0;
+	margin-left: 10px;
+	margin-right: 4px;
+	top: -39px;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}
+new:
+.footer{
+	position: relative;
+	z-index: 0;
+	margin-left: 10px;
+	margin-right: 4px;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}
+
+5)
+old:
+.footer-info {
+	position: relative;
+	top: -38px;
+}
+@media screen and (max-width: 1360px) {
+	.footer-info {
+		margin-top: -38px;
+	}
+}
+new:
+.footer-info {
+	position: relative;
+	padding-bottom: 40px;
+}
+
+6)
+old:
+.footer{
+	top: -78px;
+	border-right: 1px solid #eeeeee;
+}
+new:
+.footer{
+	border-right: 1px solid #eeeeee;
+}
+
+7)
+old:
+.widget_list-wrap {
+	margin: 0;
+	width: 100%;
+}
+new:
+.widget_list-wrap {
+	margin: 0;
+	width: 100%;
+	min-height: 400px;
+}
+
+8) добавить
+.content-news-empty	{
+	position: absolute;
+	z-index: -1;
+	top: 410px;
+	bottom: 120px;
+	left: 10px;
+	width: 356px;
+	border-left: 1px solid #e4e4e4;
+	border-right: 1px solid #e4e4e4;
+}
+@media screen and (max-width:1360px) {
+	.content-news-empty {
+		bottom: 160px;
+	}
+}
+
+9)
+new:
+.footer{
+	position: relative;
+	z-index: 0;
+	margin-left: 10px;
+	margin-right: 4px;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;  (новое свойство)
+}
+
+10)
+old:
+.left_column_news #content-right-news ul.list {
+	margin-top: 0;
+}
+new:
+.left_column_news #content-right-news ul.list {
+	margin-top: 0;
+	border-bottom: 1px solid #eee;
+}
+
+11)
+old:
+.foot-soc-btns a.tw{
+	background: url("../images/icons.png") no-repeat scroll -71px -27px transparent;
+	border-right: 1px solid #eee;
+}
+new:
+.foot-soc-btns a.tw{
+	margin-right: 1px;
+	background: url("../images/icons.png") no-repeat scroll -71px -27px transparent;
+	border-right: 1px solid #eee;
+}
+
+
+HTML desktop.html & desktop_category.html
+сразу после <div class="right-column-empty"></div> добавить <div class="content-news-empty"></div>
