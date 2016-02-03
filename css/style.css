@@ -548,6 +548,18 @@ span.b-autor-name {
 .item.news_title p {
 	margin-bottom: 0;
 }
+.item.news_title a {
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.item.news_title a:hover {
+	color: #ee897f;
+	box-shadow: 0 0 5px 1px #ee897f;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
 .icon-arrow-bot {
 	display: inline-block;
 	width: 11px;
